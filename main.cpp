@@ -1,17 +1,17 @@
-#include "Word.hpp"
+п»ї#include "Word.hpp"
 
 int main()
 {
-    // 1. НА ОБСУЖДЕНИЕ - переходим ли на линух?
-    // 2. В сокетах юзать что-то типа test.getBitset().to_string() . Сокеты юзаем потому что мютексы
-    // мало инфы переносят
+    // 1. РќРђ РћР‘РЎРЈР–Р”Р•РќРР• - РїРµСЂРµС…РѕРґРёРј Р»Рё РЅР° Р»РёРЅСѓС…?
+    // 2. Р’ СЃРѕРєРµС‚Р°С… СЋР·Р°С‚СЊ С‡С‚Рѕ-С‚Рѕ С‚РёРїР° test.getBitset().to_string() . РЎРѕРєРµС‚С‹ СЋР·Р°РµРј РїРѕС‚РѕРјСѓ С‡С‚Рѕ РјСЋС‚РµРєСЃС‹
+    // РјР°Р»Рѕ РёРЅС„С‹ РїРµСЂРµРЅРѕСЃСЏС‚
     uint8_t address = 3;
     bool k = false;
     uint8_t controlMode = 2;
     uint8_t controlCode = 4;
     uint16_t data = 343;
     Word test(address, k, controlMode, controlCode);
-    std::cout << "Command word: " << test << std::endl; // можно юзать test.getBitset().to_string()
+    std::cout << "Command word: " << test << std::endl; // РјРѕР¶РЅРѕ СЋР·Р°С‚СЊ test.getBitset().to_string()
     Word test2(data);
     std::cout << "Data word: " << test2 << std::endl;
 }
