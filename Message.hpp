@@ -1,7 +1,7 @@
 #include <vector>
 #include "Word.hpp"
 
-// tut pizdec polniy
+// тут печаль полная
 class Message{
     std::vector<Word> words;
     // type; enum какой-нить надо будет сделать

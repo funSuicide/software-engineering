@@ -1,3 +1,4 @@
+#pragma once
 #include <bitset>
 #include <iostream>
 
@@ -8,5 +9,8 @@ public:
     Word(uint16_t data);
     Word(uint8_t address, bool error, bool os, bool serviceRequest, bool groupCommand, bool subscriberBusy, bool subscriberError, bool interfaceManagement, 
         bool objectError);
-    void printWord() const;
+    // void printWord() const;
+    const std::bitset<32>& const getBitset() const;
 };
+
+std::ostream& operator <<(std::ostream& os, const Word& word);

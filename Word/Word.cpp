@@ -1,6 +1,7 @@
+#pragma once
 #include "Word.hpp"
 
-Word::Word(uint8_t address, bool k, uint8_t controlMode, uint8_t controlCode)
+Word::Word(uint8_t address, bool k, uint8_t controlMode, uint8_t controlCode)  // командное слово
 {
     for (size_t i = 12; i < 17; ++i)
     {
@@ -18,7 +19,7 @@ Word::Word(uint8_t address, bool k, uint8_t controlMode, uint8_t controlCode)
     bits[0] = (bits.count() % 2 == 0);
 }
 
-Word::Word(uint16_t data)
+Word::Word(uint16_t data)  // слово данных
 {
     for (size_t i = 1; i < 17; ++i)
     {
@@ -28,7 +29,7 @@ Word::Word(uint16_t data)
 }
 
 Word::Word(uint8_t address, bool error, bool os, bool serviceRequest, bool groupCommand, bool subscriberBusy, bool subscriberError, bool interfaceManagement, 
-        bool objectError)
+        bool objectError)  // 
 {
     for (size_t i = 12; i < 17; ++i)
     {
@@ -44,8 +45,12 @@ Word::Word(uint8_t address, bool error, bool os, bool serviceRequest, bool group
     bits[1] = objectError;
     bits[0] = (bits.count() % 2 == 0);
 }
-
-void Word::printWord() const
+const std::bitset<32>& const Word::getBitset() const
 {
-    std::cout << this->bits << std::endl;
+    return this->bits;
+}
+
+std::ostream& operator <<(std::ostream& os, const Word& word)
+{
+    return os << word.getBitset();
 }
