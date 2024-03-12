@@ -2,13 +2,16 @@
 
 int main()
 {
+    // 1. НА ОБСУЖДЕНИЕ - переходим ли на линух?
+    // 2. В сокетах юзать что-то типа test.getBitset().to_string() . Сокеты юзаем потому что мютексы
+    // мало инфы переносят
     uint8_t address = 3;
     bool k = false;
     uint8_t controlMode = 2;
     uint8_t controlCode = 4;
     uint16_t data = 343;
     Word test(address, k, controlMode, controlCode);
-    std::cout << test << std::endl;
+    std::cout << "Command word: " << test << std::endl; // можно юзать test.getBitset().to_string()
     Word test2(data);
-    std::cout << test2 << std::endl;
+    std::cout << "Data word: " << test2 << std::endl;
 }

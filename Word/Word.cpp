@@ -29,7 +29,7 @@ Word::Word(uint16_t data)  // слово данных
 }
 
 Word::Word(uint8_t address, bool error, bool os, bool serviceRequest, bool groupCommand, bool subscriberBusy, bool subscriberError, bool interfaceManagement, 
-        bool objectError)  // 
+        bool objectError)  // ответное слово
 {
     for (size_t i = 12; i < 17; ++i)
     {
