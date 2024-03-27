@@ -1,5 +1,6 @@
+#pragma once
 #include <vector>
-#include "Word.hpp"
+#include "../Word/Word.hpp"
 
 // тут печаль полная
 class Message{
