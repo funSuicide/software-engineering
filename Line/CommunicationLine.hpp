@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <bitset>
 #include <iostream>
 #include <vector>
@@ -10,12 +10,12 @@ class CommunicationLine {
 	// std::vector<int> address_descriptors;
 	bool checkForMessage()
 	{
-		// Проверка 20 сокетов..
+		// РџСЂРѕРІРµСЂРєР° 20 СЃРѕРєРµС‚РѕРІ..
 		return false;
 	}
 	void sendToAll(const Message& msg)
 	{
-		// Отослать всем 20 сокетам это сообщение
+		// РћС‚РѕСЃР»Р°С‚СЊ РІСЃРµРј 20 СЃРѕРєРµС‚Р°Рј СЌС‚Рѕ СЃРѕРѕР±С‰РµРЅРёРµ
 		// 
 		return;
 	}
@@ -23,7 +23,7 @@ public:
 	CommunicationLine()
 	{
 		/*
-		* Добавление 20 сокетов в std::vector<int>, возможно через make_socket из common.hpp
+		* Р”РѕР±Р°РІР»РµРЅРёРµ 20 СЃРѕРєРµС‚РѕРІ РІ std::vector<int>, РІРѕР·РјРѕР¶РЅРѕ С‡РµСЂРµР· make_socket РёР· common.hpp
 		int socket_desc;
 		socket_desc = socket(AF_INET, SOCK_STREAM, 0);
 		socket_descriptors.append(socket_desc);

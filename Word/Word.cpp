@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "Word.hpp"
 
 Word::Word(uint8_t address, bool k, uint8_t controlMode, uint8_t controlCode)  // командное слово

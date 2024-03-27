@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #include <bitset>
 #include <iostream>
 #include <vector>
@@ -19,7 +19,7 @@ public:
 		// check fd and maybe send response
 	}
 
-	// ïîòîì ýòè äâà ìåòîäà ïåðåíåñóòñÿ, ñêîðåå âñåãî, âíóòðü ðåàêöèè íà ñîîáùåíèå
+	// Ð¿Ð¾Ñ‚Ð¾Ð¼ ÑÑ‚Ð¸ Ð´Ð²Ð° Ð¼ÐµÑ‚Ð¾Ð´Ð° Ð¿ÐµÑ€ÐµÐ½ÐµÑÑƒÑ‚ÑÑ, ÑÐºÐ¾Ñ€ÐµÐµ Ð²ÑÐµÐ³Ð¾, Ð²Ð½ÑƒÑ‚Ñ€ÑŒ Ñ€ÐµÐ°ÐºÑ†Ð¸Ð¸ Ð½Ð° ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ
 	void switchOn()
 	{
 		this->isOn = true;

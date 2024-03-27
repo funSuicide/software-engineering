@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <bitset>
 #include <iostream>
 #include <vector>
@@ -27,7 +27,7 @@ public:
 	}
 	bool checkForGeneration()
 	{
-		// ??? проверить бит четности 
-		// один из вариантов - сохранять прошлый message от Unit ??
+		// ??? РїСЂРѕРІРµСЂРёС‚СЊ Р±РёС‚ С‡РµС‚РЅРѕСЃС‚Рё 
+		// РѕРґРёРЅ РёР· РІР°СЂРёР°РЅС‚РѕРІ - СЃРѕС…СЂР°РЅСЏС‚СЊ РїСЂРѕС€Р»С‹Р№ message РѕС‚ Unit ??
 	}
 };
